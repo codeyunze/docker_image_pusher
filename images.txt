@@ -1,4 +1,4 @@
 openjdk:8
 kibana:7.17.6
-#--platform=linux/amd64
---platform=linux/arm64
+--platform=linux/amd64
+#--platform=linux/arm64
