@@ -1,2 +1,2 @@
-kibana:7.17.6
+openjdk:8
     --platform=linux/amd64
