@@ -1,2 +1,2 @@
 openjdk:8
-    --platform=linux/amd64
+--platform=linux/amd64
