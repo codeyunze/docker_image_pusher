@@ -1,3 +1,3 @@
 openjdk:8
---platform=linux/amd64 yunze_images_space/openjdk
+#--platform=linux/amd64 yunze_images_space/openjdk
 #--platform=linux/arm64
