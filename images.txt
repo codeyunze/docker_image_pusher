@@ -1,3 +1,4 @@
-redis:6.2.6
-#支持指定架构
---platform=linux/amd64
+elasticsearch:7.17.6
+    --platform=linux/amd64
+kibana:7.17.6
+    --platform=linux/amd64
