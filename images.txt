@@ -1,6 +1,4 @@
-openjdk:8
-xhofe/alist:latest
+--platform=linux/amd64 openjdk:8
+--platform=linux/arm64 openjdk:8
 #支持指定架构
---platform=linux/arm64 xiaoyaliu/alist
-#--platform=linux/amd64 yunze_images_space/openjdk
-#--platform=linux/arm64
+#--platform=linux/arm64 镜像名:镜像版本
