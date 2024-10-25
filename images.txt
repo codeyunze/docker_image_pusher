@@ -1,14 +1,15 @@
---platform=linux/amd64 bladex/sentinel-dashboard:1.8.7
---platform=linux/arm64 bladex/sentinel-dashboard:1.8.7
---platform=linux/amd64 seataio/seata-server:1.8.0.1
---platform=linux/arm64 seataio/seata-server:1.8.0.1
---platform=linux/amd64 openjdk:17
---platform=linux/amd64 apache/kafka:3.8.0
---platform=linux/amd64 nacos/nacos-server:v2.3.2
---platform=linux/amd64 apache/rocketmq:4.9.4
---platform=linux/amd64 apache/rocketmq:5.3.1
+--platform=linux/amd64 elasticsearch:7.17.25
+#--platform=linux/amd64 bladex/sentinel-dashboard:1.8.7
+#--platform=linux/arm64 bladex/sentinel-dashboard:1.8.7
+#--platform=linux/amd64 seataio/seata-server:1.8.0.1
+#--platform=linux/arm64 seataio/seata-server:1.8.0.1
+#--platform=linux/amd64 openjdk:17
+#--platform=linux/amd64 apache/kafka:3.8.0
+#--platform=linux/amd64 nacos/nacos-server:v2.3.2
+#--platform=linux/amd64 apache/rocketmq:4.9.4
+#--platform=linux/amd64 apache/rocketmq:5.3.1
 # RabbitMQ-4.0.2
---platform=linux/amd64 rabbitmq:management
---platform=linux/amd64 openjdk:8
+#--platform=linux/amd64 rabbitmq:management
+#--platform=linux/amd64 openjdk:8
 #支持指定架构
 #--platform=linux/arm64 镜像名:镜像版本
