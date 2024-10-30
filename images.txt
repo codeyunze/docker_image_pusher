@@ -1,5 +1,6 @@
-prom/prometheus:v2.4.3
-grafana/grafana:5.2.4
+oliver006/redis_exporter:v1.64.1
+#prom/prometheus:v2.4.3
+#grafana/grafana:5.2.4
 #oliver006/redis_exporter:v1.65.0
 #oliver006/redis_exporter:v1.64.1
 #prom/mysqld-exporter:v0.15.1
