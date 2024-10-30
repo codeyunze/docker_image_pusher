@@ -1,6 +1,8 @@
-oliver006/redis_exporter:v1.65.0
-oliver006/redis_exporter:v1.64.1
-prom/mysqld-exporter:v0.15.1
+prom/prometheus:v2.4.3
+grafana/grafana:5.2.4
+#oliver006/redis_exporter:v1.65.0
+#oliver006/redis_exporter:v1.64.1
+#prom/mysqld-exporter:v0.15.1
 #grafana/grafana:11.2.3
 #prom/prometheus:v2.54.1
 #elasticsearch:8.12.2
