@@ -1,4 +1,5 @@
-redis:6.2.16
+--platform=linux/arm64/v8 openjdk:8
+#redis:6.2.16
 #--platform=linux/amd64 redis:6.2.16
 #oliver006/redis_exporter:v1.64.1
 #prom/prometheus:v2.4.3
