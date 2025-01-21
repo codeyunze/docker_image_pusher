@@ -1,4 +1,5 @@
---platform=linux/amd64 rabbitmq:3.13.7
+--platform=linux/amd64 rabbitmq:3.13.7-management
+--platform=linux/arm64/v8 rabbitmq:3.13.7-management
 #--platform=linux/arm64/v8 rabbitmq:3.13.7
 #--platform=linux/arm64/v8 openjdk:8
 #redis:6.2.16
