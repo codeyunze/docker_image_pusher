@@ -1,5 +1,7 @@
---platform=linux/arm64 nacos/nacos-server:v2.5.1
---platform=linux/amd64 nacos/nacos-server:v2.5.1
+--platform=linux/arm64/v8 kibana:7.17.25
+--platform=linux/amd64 kibana:7.17.25
+#--platform=linux/arm64 nacos/nacos-server:v2.5.1
+#--platform=linux/amd64 nacos/nacos-server:v2.5.1
 #--platform=linux/arm64 jenkins/jenkins:2.492.1-lts-jdk17
 #--platform=linux/arm64/v8 nginx:1.26.3
 #--platform=linux/amd64 nginx:1.26.3
