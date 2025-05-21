@@ -1,5 +1,7 @@
---platform=linux/arm64/v8 kibana:7.17.25
---platform=linux/amd64 kibana:7.17.25
+--platform=linux/arm64/v8 prometheuscommunity/elasticsearch-exporter
+--platform=linux/amd64 prometheuscommunity/elasticsearch-exporter
+#--platform=linux/arm64/v8 kibana:7.17.25
+#--platform=linux/amd64 kibana:7.17.25
 #--platform=linux/arm64 nacos/nacos-server:v2.5.1
 #--platform=linux/amd64 nacos/nacos-server:v2.5.1
 #--platform=linux/arm64 jenkins/jenkins:2.492.1-lts-jdk17
