@@ -1,5 +1,7 @@
---platform=linux/amd64 openjdk:25-ea-17-jdk-slim
---platform=linux/arm64/v8 openjdk:25-ea-17-jdk-slim
+--platform=linux/amd64 openjdk:26-ea-8-jdk-slim
+--platform=linux/arm64/v8 openjdk:26-ea-8-jdk-slim
+#--platform=linux/amd64 openjdk:25-ea-17-jdk-slim
+#--platform=linux/arm64/v8 openjdk:25-ea-17-jdk-slim
 #--platform=linux/amd64 elasticsearch:7.17.25
 #--platform=linux/arm64/v8 elasticsearch:7.17.25
 #--platform=linux/amd64 redis:7.4.5
