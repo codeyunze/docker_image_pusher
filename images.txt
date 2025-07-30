@@ -1,7 +1,11 @@
---platform=linux/arm64/v8 elastic/filebeat:7.17.25
---platform=linux/amd64 elastic/filebeat:7.17.25
---platform=linux/arm64/v8 logstash:7.17.25
---platform=linux/amd64 logstash:7.17.25
+--platform=linux/amd64 apache/rocketmq:5.3.3
+--platform=linux/arm64 apache/rocketmq:5.3.3
+--platform=linux/amd64 bladex/sentinel-dashboard:1.8.7
+--platform=linux/arm64 bladex/sentinel-dashboard:1.8.7
+#--platform=linux/arm64/v8 elastic/filebeat:7.17.25
+#--platform=linux/amd64 elastic/filebeat:7.17.25
+#--platform=linux/arm64/v8 logstash:7.17.25
+#--platform=linux/amd64 logstash:7.17.25
 #--platform=linux/amd64 xuxueli/xxl-job-admin:3.1.1
 #--platform=linux/amd64 openjdk:26-ea-8-jdk-slim
 #--platform=linux/arm64/v8 openjdk:26-ea-8-jdk-slim
