@@ -1,5 +1,7 @@
---platform=linux/amd64 6053537/portainer-ce:2.27.9
---platform=linux/arm64 6053537/portainer-ce:2.27.9
+--platform=linux/amd64 portainer/agent:2.27.9
+--platform=linux/arm64 portainer/agent:2.27.9
+#--platform=linux/amd64 6053537/portainer-ce:2.27.9
+#--platform=linux/arm64 6053537/portainer-ce:2.27.9
 portainer/portainer:linux-amd64-2.0.1
 #--platform=linux/arm64/v8 logstash:8.19.0
 #--platform=linux/amd64 logstash:8.19.0
