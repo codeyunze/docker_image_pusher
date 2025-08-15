@@ -1,4 +1,3 @@
---platform=windows/amd64 6053537/portainer-ce:2.27.9
 --platform=linux/amd64 6053537/portainer-ce:2.27.9
 --platform=linux/arm64 6053537/portainer-ce:2.27.9
 portainer/portainer:linux-amd64-2.0.1
