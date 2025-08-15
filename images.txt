@@ -1,5 +1,6 @@
---platform=linux/arm64/v8 logstash:8.19.0
---platform=linux/amd64 logstash:8.19.0
+portainer/portainer:linux-amd64-2.0.1
+#--platform=linux/arm64/v8 logstash:8.19.0
+#--platform=linux/amd64 logstash:8.19.0
 #--platform=linux/arm64/v8 kibana:8.19.0
 #--platform=linux/amd64 kibana:8.19.0
 #--platform=linux/arm64/v8 elasticsearch:8.19.0
