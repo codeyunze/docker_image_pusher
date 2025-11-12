@@ -1,5 +1,11 @@
---platform=linux/amd64 jenkins/jenkins:2.535-jdk21
---platform=linux/arm64 jenkins/jenkins:2.535-jdk21
+--platform=linux/amd64 prom/prometheus:v3.7.3
+--platform=linux/arm64 prom/prometheus:v3.7.3
+--platform=linux/amd64 grafana/grafana:12.2
+--platform=linux/arm64 grafana/grafana:12.2
+
+
+#--platform=linux/amd64 jenkins/jenkins:2.535-jdk21
+#--platform=linux/arm64 jenkins/jenkins:2.535-jdk21
 
 #--platform=linux/amd64 apacherocketmq/rocketmq-dashboard:2.1.0
 #--platform=linux/arm64  apacherocketmq/rocketmq-dashboard:2.1.0
