@@ -1,5 +1,8 @@
---platform=linux/amd64 seataio/seata-server:1.6.1
---platform=linux/arm64 seataio/seata-server:1.6.1
+--platform=linux/arm64 nacos/nacos-server:v2.3.2-slim
+--platform=linux/amd64 nacos/nacos-server:v2.3.2-slim
+
+#--platform=linux/amd64 seataio/seata-server:1.6.1
+#--platform=linux/arm64 seataio/seata-server:1.6.1
 
 #xuxueli/xxl-job-admin:3.2.0
 
