@@ -1,8 +1,12 @@
---platform=linux/amd64 prom/prometheus:v3.7.3
---platform=linux/arm64 prom/prometheus:v3.7.3
---platform=linux/amd64 grafana/grafana:12.2
---platform=linux/arm64 grafana/grafana:12.2
+--platform=linux/amd64 seataio/seata-server:1.6.1
+--platform=linux/arm64 seataio/seata-server:1.6.1
 
+#xuxueli/xxl-job-admin:3.2.0
+
+#--platform=linux/amd64 prom/prometheus:v3.7.3
+#--platform=linux/arm64 prom/prometheus:v3.7.3
+#--platform=linux/amd64 grafana/grafana:12.2
+#--platform=linux/arm64 grafana/grafana:12.2
 
 #--platform=linux/amd64 jenkins/jenkins:2.535-jdk21
 #--platform=linux/arm64 jenkins/jenkins:2.535-jdk21
