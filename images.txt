@@ -1,5 +1,8 @@
---platform=linux/amd64 seataio/seata-server:1.7.1
---platform=linux/arm64 seataio/seata-server:1.7.1
+--platform=linux/amd64 quay.io/prometheus/node-exporter:v1.10.2
+--platform=linux/arm64 quay.io/prometheus/node-exporter:v1.10.2
+
+#--platform=linux/amd64 seataio/seata-server:1.7.1
+#--platform=linux/arm64 seataio/seata-server:1.7.1
 
 #--platform=linux/arm64 nacos/nacos-server:v2.3.2-slim
 #--platform=linux/amd64 nacos/nacos-server:v2.3.2-slim
