@@ -1,3 +1,6 @@
+--platform=linux/amd64 rustfs/rustfs:1.0.0-alpha.79
+--platform=linux/arm64 rustfs/rustfs:1.0.0-alpha.79
+
 --platform=linux/amd64 quay.io/prometheus/node-exporter:v1.10.2
 --platform=linux/arm64 quay.io/prometheus/node-exporter:v1.10.2
 
