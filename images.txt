@@ -1,31 +1,25 @@
---platform=linux/amd64 rustfs/rustfs:1.0.0-alpha.79
---platform=linux/arm64 rustfs/rustfs:1.0.0-alpha.79
+--platform=linux/amd64 registry.fit2cloud.com/halo/halo:2.22.0
+--platform=linux/arm64 registry.fit2cloud.com/halo/halo:2.22.0
 
---platform=linux/amd64 quay.io/prometheus/node-exporter:v1.10.2
---platform=linux/arm64 quay.io/prometheus/node-exporter:v1.10.2
-
+#--platform=linux/amd64 rustfs/rustfs:1.0.0-alpha.79
+#--platform=linux/arm64 rustfs/rustfs:1.0.0-alpha.79
+#--platform=linux/amd64 quay.io/prometheus/node-exporter:v1.10.2
+#--platform=linux/arm64 quay.io/prometheus/node-exporter:v1.10.2
 #--platform=linux/amd64 seataio/seata-server:1.7.1
 #--platform=linux/arm64 seataio/seata-server:1.7.1
-
 #--platform=linux/arm64 nacos/nacos-server:v2.3.2-slim
 #--platform=linux/amd64 nacos/nacos-server:v2.3.2-slim
-
 #--platform=linux/amd64 seataio/seata-server:1.6.1
 #--platform=linux/arm64 seataio/seata-server:1.6.1
-
 #xuxueli/xxl-job-admin:3.2.0
-
 #--platform=linux/amd64 prom/prometheus:v3.7.3
 #--platform=linux/arm64 prom/prometheus:v3.7.3
 #--platform=linux/amd64 grafana/grafana:12.2
 #--platform=linux/arm64 grafana/grafana:12.2
-
 #--platform=linux/amd64 jenkins/jenkins:2.535-jdk21
 #--platform=linux/arm64 jenkins/jenkins:2.535-jdk21
-
 #--platform=linux/amd64 apacherocketmq/rocketmq-dashboard:2.1.0
 #--platform=linux/arm64  apacherocketmq/rocketmq-dashboard:2.1.0
-
 #--platform=linux/amd64 node:20.19.4
 #--platform=linux/arm64/v8 node:20.19.4
 #--platform=linux/amd64 postgres:16.10
