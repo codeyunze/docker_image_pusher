@@ -1,4 +1,6 @@
-hunsh/gh-proxy-py:latest
+--platform=linux/amd64 hunsh/gh-proxy-py:latest
+--platform=linux/arm64 hunsh/gh-proxy-py:latest
+
 
 #--platform=linux/amd64 mysql:8.0.29
 #--platform=linux/arm64/v8 mysql:8.0.29
