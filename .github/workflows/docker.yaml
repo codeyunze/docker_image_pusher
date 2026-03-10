@@ -61,6 +61,9 @@ jobs:
           # 数据预处理,判断镜像是否重名
           declare -A duplicate_images
           declare -A temp_map
+          # 记录需要做多平台合并的镜像：key 为“最终目标镜像名”（不带平台前缀），value 为各平台镜像列表
+          declare -A manifest_sources
+          declare -A manifest_count
           while IFS= read -r line || [ -n "$line" ]; do
               # 忽略空行与注释
               [[ -z "$line" ]] && continue
@@ -144,6 +147,14 @@ jobs:
               docker tag $image $new_image
               echo "docker push $new_image"
               docker push $new_image
+
+              # 仅对带 --platform 的镜像做多平台合并统计
+              if [ -n "$platform_prefix" ]; then
+                  base_image="$ALIYUN_REGISTRY/$ALIYUN_NAME_SPACE/$name_space_prefix$image_name_tag"
+                  manifest_sources["$base_image"]="${manifest_sources[$base_image]} $new_image"
+                  manifest_count["$base_image"]=$(( ${manifest_count[$base_image]:-0} + 1 ))
+              fi
+
               echo "开始清理磁盘空间"
               echo "=============================================================================="
               df -hT
@@ -156,5 +167,20 @@ jobs:
               echo "=============================================================================="     
           
           done < images.txt
-          
+
+          echo "开始创建并推送多平台 manifest（如有需要）"
+          for base_image in "${!manifest_sources[@]}"; do
+              count=${manifest_count[$base_image]}
+              if [ "$count" -lt 2 ]; then
+                  echo "跳过 $base_image，仅检测到 $count 个平台"
+                  continue
+              fi
+
+              echo "为 $base_image 创建 manifest, 包含平台镜像: ${manifest_sources[$base_image]}"
+              docker manifest create "$base_image" ${manifest_sources[$base_image]}
+              docker manifest push "$base_image"
+              docker manifest rm "$base_image" || true
+          done
+          echo "多平台 manifest 处理完成"
+
           echo "结束"
