@@ -1,3 +1,6 @@
+--platform=linux/amd64 nginx:stable-alpine
+--platform=linux/arm64/v8 nginx:stable-alpine
+
 --platform=linux/amd64 node:22.22-slim
 --platform=linux/arm64/v8 node:22.22-slim
 
