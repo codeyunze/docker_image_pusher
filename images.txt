@@ -1,5 +1,8 @@
---platform=linux/amd64 mydumper/mydumper:v0.21.3-2
---platform=linux/arm64 mydumper/mydumper:v0.21.3-2
+--platform=linux/amd64 node:22.22-slim
+--platform=linux/arm64/v8 node:22.22-slim
+
+#--platform=linux/amd64 mydumper/mydumper:v0.21.3-2
+#--platform=linux/arm64 mydumper/mydumper:v0.21.3-2
 
 #--platform=linux/amd64 bytebase/bytebase:3.15.1
 #--platform=linux/arm64 bytebase/bytebase:3.15.1
