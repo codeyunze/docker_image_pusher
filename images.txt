@@ -1,5 +1,8 @@
---platform=linux/amd64 apache/kafka:3.9.2
---platform=linux/arm64 apache/kafka:3.9.2
+--platform=linux/amd64 provectuslabs/kafka-ui:v0.7.2
+--platform=linux/arm64 provectuslabs/kafka-ui:v0.7.2
+
+#--platform=linux/amd64 apache/kafka:3.9.2
+#--platform=linux/arm64 apache/kafka:3.9.2
 
 #--platform=linux/amd64 nginx:stable-alpine
 #--platform=linux/arm64/v8 nginx:stable-alpine
