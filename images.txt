@@ -1,5 +1,11 @@
---platform=linux/amd64 eclipse-temurin:11-jre
---platform=linux/arm64/v8 eclipse-temurin:11-jre
+--platform=linux/amd64 milvusdb/milvus:v2.6.18
+--platform=linux/arm64 milvusdb/milvus:v2.6.18
+
+--platform=linux/amd64 quay.io/coreos/etcd:v3.5.25
+--platform=linux/arm64 quay.io/coreos/etcd:v3.5.25
+
+#--platform=linux/amd64 eclipse-temurin:11-jre
+#--platform=linux/arm64/v8 eclipse-temurin:11-jre
 
 #--platform=linux/amd64 maven:3.9-eclipse-temurin-11
 #--platform=linux/arm64/v8 maven:3.9-eclipse-temurin-11
