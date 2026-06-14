@@ -1,8 +1,11 @@
---platform=linux/amd64 milvusdb/milvus:v2.6.18
---platform=linux/arm64 milvusdb/milvus:v2.6.18
+--platform=linux/amd64 minio/minio:RELEASE.2024-12-18T13-15-44Z
+--platform=linux/arm64 minio/minio:RELEASE.2024-12-18T13-15-44Z
 
---platform=linux/amd64 quay.io/coreos/etcd:v3.5.25
---platform=linux/arm64 quay.io/coreos/etcd:v3.5.25
+#--platform=linux/amd64 milvusdb/milvus:v2.6.18
+#--platform=linux/arm64 milvusdb/milvus:v2.6.18
+
+#--platform=linux/amd64 quay.io/coreos/etcd:v3.5.25
+#--platform=linux/arm64 quay.io/coreos/etcd:v3.5.25
 
 #--platform=linux/amd64 eclipse-temurin:11-jre
 #--platform=linux/arm64/v8 eclipse-temurin:11-jre
