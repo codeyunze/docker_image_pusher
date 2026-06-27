@@ -1,3 +1,9 @@
+--platform=linux/amd64 mongo:4.4.30
+--platform=linux/arm64/v8 mongo:4.4.30
+
+--platform=linux/amd64 mongo:3.6.23
+--platform=linux/arm64/v8 mongo:3.6.23
+
 --platform=linux/amd64 zilliz/attu:v3.0.0-beta.6
 --platform=linux/arm64 zilliz/attu:v3.0.0-beta.6
 
