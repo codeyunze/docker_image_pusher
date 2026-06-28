@@ -1,11 +1,14 @@
---platform=linux/amd64 mongo:4.4.30
---platform=linux/arm64/v8 mongo:4.4.30
+--platform=linux/amd64 ghcr.io/kafbat/kafka-ui:096140b
+--platform=linux/arm64 ghcr.io/kafbat/kafka-ui:096140b
 
---platform=linux/amd64 mongo:3.6.23
---platform=linux/arm64/v8 mongo:3.6.23
+#--platform=linux/amd64 mongo:4.4.30
+#--platform=linux/arm64/v8 mongo:4.4.30
 
---platform=linux/amd64 zilliz/attu:v3.0.0-beta.6
---platform=linux/arm64 zilliz/attu:v3.0.0-beta.6
+#--platform=linux/amd64 mongo:3.6.23
+#--platform=linux/arm64/v8 mongo:3.6.23
+
+#--platform=linux/amd64 zilliz/attu:v3.0.0-beta.6
+#--platform=linux/arm64 zilliz/attu:v3.0.0-beta.6
 
 #--platform=linux/amd64 minio/minio:RELEASE.2024-12-18T13-15-44Z
 #--platform=linux/arm64 minio/minio:RELEASE.2024-12-18T13-15-44Z
