@@ -1,7 +1,9 @@
---platform=linux/amd64 apache/skywalking-oap-server:10.4.0
---platform=linux/arm64 apache/skywalking-oap-server:10.4.0
---platform=linux/amd64 apache/skywalking-ui:10.4.0
---platform=linux/arm64 apache/skywalking-ui:10.4.0
+xuxueli/xxl-job-admin:3.4.2
+
+#--platform=linux/amd64 apache/skywalking-oap-server:10.4.0
+#--platform=linux/arm64 apache/skywalking-oap-server:10.4.0
+#--platform=linux/amd64 apache/skywalking-ui:10.4.0
+#--platform=linux/arm64 apache/skywalking-ui:10.4.0
 
 
 #--platform=linux/amd64 xuxueli/xxl-job-admin:3.4.2
