@@ -1,5 +1,8 @@
---platform=linux/amd64 jaegertracing/jaeger:2.20.0
---platform=linux/arm64 jaegertracing/jaeger:2.20.0
+--platform=linux/amd64 rustfs/rustfs:1.0.0-rc.2
+--platform=linux/arm64 rustfs/rustfs:1.0.0-rc.2
+
+#--platform=linux/amd64 jaegertracing/jaeger:2.20.0
+#--platform=linux/arm64 jaegertracing/jaeger:2.20.0
 
 #xuxueli/xxl-job-admin:3.4.2
 
