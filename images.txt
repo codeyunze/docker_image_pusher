@@ -1,5 +1,8 @@
---platform=linux/amd64 rancher/mirrored-pause:3.6
---platform=linux/arm64/v8 rancher/mirrored-pause:3.6
+--platform=linux/amd64 magiccoders/nginxpulse:v1.6.24
+--platform=linux/arm64 magiccoders/nginxpulse:v1.6.24
+
+#--platform=linux/amd64 rancher/mirrored-pause:3.6
+#--platform=linux/arm64/v8 rancher/mirrored-pause:3.6
 
 #--platform=linux/amd64 busybox:1.36.1
 #--platform=linux/arm64/v8 busybox:1.36.1
