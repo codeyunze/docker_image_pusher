@@ -1,5 +1,8 @@
---platform=linux/amd64 nginx:1.30.4
---platform=linux/arm64/v8 nginx:1.30.4
+--platform=linux/amd64 kubernetesui/metrics-scraper:v1.0.8
+--platform=linux/arm64 kubernetesui/metrics-scraper:v1.0.8
+
+#--platform=linux/amd64 nginx:1.30.4
+#--platform=linux/arm64/v8 nginx:1.30.4
 
 #--platform=linux/amd64 magiccoders/nginxpulse:v1.6.24
 #--platform=linux/arm64 magiccoders/nginxpulse:v1.6.24
