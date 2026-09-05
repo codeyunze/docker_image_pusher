@@ -1,101 +1,76 @@
---platform=linux/amd64 kubernetesui/metrics-scraper:v1.0.8
---platform=linux/arm64 kubernetesui/metrics-scraper:v1.0.8
+--platform=linux/amd64 elastic/apm-server:8.19.21
+--platform=linux/arm64 elastic/apm-server:8.19.21
+--platform=linux/arm64/v8 elasticsearch:8.19.21
+--platform=linux/amd64 elasticsearch:8.19.21
+--platform=linux/arm64/v8 kibana:8.19.21
+--platform=linux/amd64 kibana:8.19.21
+--platform=linux/arm64/v8 logstash:8.19.21
+--platform=linux/amd64 logstash:8.19.21
 
+#--platform=linux/amd64 kubernetesui/metrics-scraper:v1.0.8
+#--platform=linux/arm64 kubernetesui/metrics-scraper:v1.0.8
 #--platform=linux/amd64 nginx:1.30.4
 #--platform=linux/arm64/v8 nginx:1.30.4
-
 #--platform=linux/amd64 magiccoders/nginxpulse:v1.6.24
 #--platform=linux/arm64 magiccoders/nginxpulse:v1.6.24
-
 #--platform=linux/amd64 rancher/mirrored-pause:3.6
 #--platform=linux/arm64/v8 rancher/mirrored-pause:3.6
-
 #--platform=linux/amd64 busybox:1.36.1
 #--platform=linux/arm64/v8 busybox:1.36.1
-
 #--platform=linux/amd64 rancher/mirrored-library-busybox:1.36.1
 #--platform=linux/arm64/v8 rancher/mirrored-library-busybox:1.36.1
-
 #--platform=linux/amd64 rustfs/rustfs:1.0.0-rc.2
 #--platform=linux/arm64 rustfs/rustfs:1.0.0-rc.2
-
 #--platform=linux/amd64 jaegertracing/jaeger:2.20.0
 #--platform=linux/arm64 jaegertracing/jaeger:2.20.0
-
 #xuxueli/xxl-job-admin:3.4.2
-
 #--platform=linux/amd64 apache/skywalking-oap-server:10.4.0
 #--platform=linux/arm64 apache/skywalking-oap-server:10.4.0
 #--platform=linux/amd64 apache/skywalking-ui:10.4.0
 #--platform=linux/arm64 apache/skywalking-ui:10.4.0
-
-
 #--platform=linux/amd64 xuxueli/xxl-job-admin:3.4.2
-
 #--platform=linux/amd64 ghcr.io/kafbat/kafka-ui:096140b
 #--platform=linux/arm64 ghcr.io/kafbat/kafka-ui:096140b
-
 #--platform=linux/amd64 mongo:4.4.30
 #--platform=linux/arm64/v8 mongo:4.4.30
-
 #--platform=linux/amd64 mongo:3.6.23
 #--platform=linux/arm64/v8 mongo:3.6.23
-
 #--platform=linux/amd64 zilliz/attu:v3.0.0-beta.6
 #--platform=linux/arm64 zilliz/attu:v3.0.0-beta.6
-
 #--platform=linux/amd64 minio/minio:RELEASE.2024-12-18T13-15-44Z
 #--platform=linux/arm64 minio/minio:RELEASE.2024-12-18T13-15-44Z
-
 #--platform=linux/amd64 milvusdb/milvus:v2.6.18
 #--platform=linux/arm64 milvusdb/milvus:v2.6.18
-
 #--platform=linux/amd64 quay.io/coreos/etcd:v3.5.25
 #--platform=linux/arm64 quay.io/coreos/etcd:v3.5.25
-
 #--platform=linux/amd64 eclipse-temurin:11-jre
 #--platform=linux/arm64/v8 eclipse-temurin:11-jre
-
 #--platform=linux/amd64 maven:3.9-eclipse-temurin-11
 #--platform=linux/arm64/v8 maven:3.9-eclipse-temurin-11
-
 #--platform=linux/amd64 eclipse-temurin:11-jre-jammy
 #--platform=linux/arm64/v8 eclipse-temurin:11-jre-jammy
-
 #--platform=linux/amd64 nacos/nacos-server:v2.2.0.1-slim
 #--platform=linux/arm64 nacos/nacos-server:v2.2.0.1-slim
-
 #--platform=linux/amd64 provectuslabs/kafka-ui:v0.7.2
 #--platform=linux/arm64 provectuslabs/kafka-ui:v0.7.2
-
 #--platform=linux/amd64 apache/kafka:3.9.2
 #--platform=linux/arm64 apache/kafka:3.9.2
-
 #--platform=linux/amd64 nginx:stable-alpine
 #--platform=linux/arm64/v8 nginx:stable-alpine
-
 #--platform=linux/amd64 node:22.22-slim
 #--platform=linux/arm64/v8 node:22.22-slim
-
 #--platform=linux/amd64 mydumper/mydumper:v0.21.3-2
 #--platform=linux/arm64 mydumper/mydumper:v0.21.3-2
-
 #--platform=linux/amd64 bytebase/bytebase:3.15.1
 #--platform=linux/arm64 bytebase/bytebase:3.15.1
-
 #--platform=linux/amd64 hunsh/gh-proxy-py:latest
 #--platform=linux/arm64 hunsh/gh-proxy-py:latest
-
-
 #--platform=linux/amd64 mysql:8.0.29
 #--platform=linux/arm64/v8 mysql:8.0.29
-
 #--platform=linux/amd64 mysql:8.0-debian
 #--platform=linux/arm64 mysql:8.0-debian
-
 #--platform=linux/amd64 registry.fit2cloud.com/halo/halo:2.22.0
 #--platform=linux/arm64 registry.fit2cloud.com/halo/halo:2.22.0
-
 #--platform=linux/amd64 rustfs/rustfs:1.0.0-alpha.79
 #--platform=linux/arm64 rustfs/rustfs:1.0.0-alpha.79
 #--platform=linux/amd64 quay.io/prometheus/node-exporter:v1.10.2
@@ -127,8 +102,6 @@
 #--platform=linux/amd64 6053537/portainer-ce:2.27.9
 #--platform=linux/arm64 6053537/portainer-ce:2.27.9
 #portainer/portainer:linux-amd64-2.0.1
-#--platform=linux/arm64/v8 logstash:8.19.0
-#--platform=linux/amd64 logstash:8.19.0
 #--platform=linux/arm64/v8 logstash:8.19.0
 #--platform=linux/amd64 logstash:8.19.0
 #--platform=linux/arm64/v8 kibana:8.19.0
