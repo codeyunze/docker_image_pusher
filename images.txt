@@ -1,12 +1,14 @@
---platform=linux/amd64 elastic/apm-server:8.19.21
---platform=linux/arm64 elastic/apm-server:8.19.21
---platform=linux/arm64/v8 elasticsearch:8.19.21
---platform=linux/amd64 elasticsearch:8.19.21
---platform=linux/arm64/v8 kibana:8.19.21
---platform=linux/amd64 kibana:8.19.21
---platform=linux/arm64/v8 logstash:8.19.21
---platform=linux/amd64 logstash:8.19.21
+--platform=linux/amd64 rustfs/rustfs:1.0.0-rc.5
+--platform=linux/arm64 rustfs/rustfs:1.0.0-rc.5
 
+#--platform=linux/amd64 elastic/apm-server:8.19.21
+#--platform=linux/arm64 elastic/apm-server:8.19.21
+#--platform=linux/arm64/v8 elasticsearch:8.19.21
+#--platform=linux/amd64 elasticsearch:8.19.21
+#--platform=linux/arm64/v8 kibana:8.19.21
+#--platform=linux/amd64 kibana:8.19.21
+#--platform=linux/arm64/v8 logstash:8.19.21
+#--platform=linux/amd64 logstash:8.19.21
 #--platform=linux/amd64 kubernetesui/metrics-scraper:v1.0.8
 #--platform=linux/arm64 kubernetesui/metrics-scraper:v1.0.8
 #--platform=linux/amd64 nginx:1.30.4
