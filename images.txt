@@ -1,5 +1,7 @@
---platform=linux/amd64 rustfs/rustfs:1.0.0-rc.5
---platform=linux/arm64 rustfs/rustfs:1.0.0-rc.5
+--platform=linux/amd64 mongo:7.0.43
+--platform=linux/arm64/v8 mongo:7.0.43
+--platform=linux/amd64 rustfs/rustfs:1.0.0
+--platform=linux/arm64 rustfs/rustfs:1.0.0
 
 #--platform=linux/amd64 elastic/apm-server:8.19.21
 #--platform=linux/arm64 elastic/apm-server:8.19.21
