@@ -1,8 +1,11 @@
---platform=linux/amd64 mongo:8.3.11
---platform=linux/arm64/v8 mongo:8.3.11
+--platform=linux/amd64 clickhouse/clickhouse-server:26.4.5.143
+--platform=linux/arm64 clickhouse/clickhouse-server:26.4.5.143
+
+
+#--platform=linux/amd64 mongo:8.3.11
+#--platform=linux/arm64/v8 mongo:8.3.11
 #--platform=linux/amd64 rustfs/rustfs:1.0.0
 #--platform=linux/arm64 rustfs/rustfs:1.0.0
-
 #--platform=linux/amd64 elastic/apm-server:8.19.21
 #--platform=linux/arm64 elastic/apm-server:8.19.21
 #--platform=linux/arm64/v8 elasticsearch:8.19.21
