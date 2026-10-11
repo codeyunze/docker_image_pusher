@@ -1,7 +1,9 @@
---platform=linux/amd64 clickhouse/clickhouse-server:26.4.5.143
---platform=linux/arm64 clickhouse/clickhouse-server:26.4.5.143
+--platform=linux/amd64 openresty/openresty:1.31.1.1-alpine-fat
+--platform=linux/arm64 openresty/openresty:1.31.1.1-alpine-fat
 
 
+#--platform=linux/amd64 clickhouse/clickhouse-server:26.4.5.143
+#--platform=linux/arm64 clickhouse/clickhouse-server:26.4.5.143
 #--platform=linux/amd64 mongo:8.3.11
 #--platform=linux/arm64/v8 mongo:8.3.11
 #--platform=linux/amd64 rustfs/rustfs:1.0.0
