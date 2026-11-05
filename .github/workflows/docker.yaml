@@ -25,22 +25,60 @@ jobs:
           df -hT
           echo "=============================================================================="
 
-      # 增加可用磁盘空间
-      - name: Maximize build space
-        uses: easimon/maximize-build-space@master
-        with:
+      # ubuntu-latest 正在切到 Ubuntu 26。maximize-build-space@master 会把根分区
+      # 实际缩到 root-reserve-mb（原先 2GB），runner 写日志时 No space left on device，任务直接退出。
+      # 新 runner 根分区大约有 90GB，只删掉用不到的预装软件。
+      - name: Free disk space
+        run: |
+          sudo rm -rf \
+            /usr/share/dotnet \
+            /usr/local/lib/android \
+            /opt/ghc \
+            /usr/local/share/boost \
+            /usr/local/share/powershell \
+            /usr/share/swift \
+            "$AGENT_TOOLSDIRECTORY" || true
+          sudo apt-get clean || true
+          df -hT
 
-          root-reserve-mb: 2048
-          swap-size-mb: 128
-          remove-dotnet: 'true'
-          remove-haskell: 'true'
-          # 如果空间还是不够用，可以把以下开启，清理出更多空间
-          # remove-android: 'true'
-          # remove-codeql: 'true'
-          build-mount-path: '/var/lib/docker/'
-
-      - name: Restart docker
-        run: sudo service docker restart
+      # Ubuntu 26 的 Docker 29 默认用 containerd snapshotter，同一层会存压缩包和解压层两份，
+      # 而且数据在 /var/lib/containerd，不在 /var/lib/docker。改回 overlay2，并删掉已经落盘的 snapshotter 数据。
+      - name: Use classic Docker storage driver
+        run: |
+          set -eux
+          sudo systemctl stop docker.socket || true
+          sudo systemctl stop docker || true
+          sudo systemctl stop containerd || true
+          echo "===== image store before cleanup ====="
+          sudo du -sh /var/lib/docker /var/lib/containerd 2>/dev/null || true
+          sudo python3 - <<'PY'
+          import json
+          from pathlib import Path
+          p = Path("/etc/docker/daemon.json")
+          data = {}
+          if p.exists() and p.stat().st_size > 0:
+              data = json.loads(p.read_text())
+          features = data.get("features") or {}
+          features["containerd-snapshotter"] = False
+          data["features"] = features
+          p.write_text(json.dumps(data, indent=2) + "\n")
+          PY
+          sudo rm -rf \
+            /var/lib/containerd/io.containerd.content.v1.content \
+            /var/lib/containerd/io.containerd.snapshotter.v1.overlayfs \
+            /var/lib/docker/containerd
+          sudo systemctl start containerd || true
+          sudo systemctl start docker
+          driver=$(docker info -f '{{.Driver}}')
+          echo "Storage Driver: $driver"
+          if [ "$driver" != "overlay2" ]; then
+            echo "Docker 仍在使用 $driver，镜像会继续把根分区写满"
+            docker info
+            exit 1
+          fi
+          echo "===== image store after cleanup ====="
+          sudo du -sh /var/lib/docker /var/lib/containerd 2>/dev/null || true
+          df -hT
 
       - name: Free up disk space complete
         run: |
@@ -159,8 +197,9 @@ jobs:
               echo "=============================================================================="
               df -hT
               echo "=============================================================================="
-              docker rmi $image
-              docker rmi $new_image
+              docker rmi "$image" || true
+              docker rmi "$new_image" || true
+              docker image prune -af >/dev/null || true
               echo "磁盘空间清理完毕"
               echo "=============================================================================="
               df -hT
