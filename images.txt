@@ -1,5 +1,8 @@
 --platform=linux/amd64 oliver006/redis_exporter:v1.97.0
---platform=linux/amd64 oliver006/redis_exporter:v1.97.0
+--platform=linux/arm64 oliver006/redis_exporter:v1.97.0
+
+--platform=linux/amd64 prom/mysqld-exporter:v0.21.0
+--platform=linux/arm64 prom/mysqld-exporter:v0.21.0
 
 #--platform=linux/amd64 openresty/openresty:1.31.1.1-alpine-fat
 #--platform=linux/arm64 openresty/openresty:1.31.1.1-alpine-fat
