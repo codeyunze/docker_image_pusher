@@ -1,6 +1,8 @@
---platform=linux/amd64 danielqsj/kafka-exporter:v1.11.0
---platform=linux/arm64 danielqsj/kafka-exporter:v1.11.0
+--platform=linux/amd64 bladex/sentinel-dashboard:1.8.10
+--platform=linux/arm64 bladex/sentinel-dashboard:1.8.10
 
+#--platform=linux/amd64 danielqsj/kafka-exporter:v1.11.0
+#--platform=linux/arm64 danielqsj/kafka-exporter:v1.11.0
 #--platform=linux/amd64 oliver006/redis_exporter:v1.97.0
 #--platform=linux/arm64 oliver006/redis_exporter:v1.97.0
 #--platform=linux/amd64 prom/mysqld-exporter:v0.21.0
